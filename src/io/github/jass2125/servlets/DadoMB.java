@@ -1,6 +1,6 @@
-package io.github.jass2125.managedbeans;
+package io.github.jass2125.servlets;
 
-import io.github.jass2125.sessionsbeans.LancadorDeDadoBean;
+import io.github.jass2125.sessionsbeans.LancadorDeDado;
 
 import java.io.IOException;
 
@@ -18,7 +18,7 @@ public class DadoMB extends HttpServlet{
 	 */
 	private static final long serialVersionUID = 1L;
 	@EJB
-	private LancadorDeDadoBean lancador;
+	private LancadorDeDado lancador;
 	
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
